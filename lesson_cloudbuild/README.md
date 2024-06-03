@@ -8,7 +8,7 @@ SERVICE_NAME=service-hoge # CloudRunへデプロイされるサービス名
 
 Cloud Buildを実行:
 ```
-gcloud builds submit
+gcloud builds submit --substitutions _IMAGE_NAME=$IMAGE_NAME,_SERVICE_NAME=$SERVICE_NAME
 ```
 
 デプロイされたサービスへのアクセス
